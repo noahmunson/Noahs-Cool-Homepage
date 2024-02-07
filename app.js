@@ -8,15 +8,16 @@ function myFunction() {
   }
 }
 function updateClock() {
+  let pe = "AM";
+  
   const now = new Date();
   const dname = now.getDay(),
     mo = now.getMonth(),
     dnum = now.getDate(),
     yr = now.getFullYear(),
-    hou = now.getHours(),
     min = now.getMinutes(),
-    sec = now.getSeconds(),
-    pe = "AM";
+    sec = now.getSeconds();
+    let hou = now.getHours();
 
   if (hou >= 12) {
     pe = "PM";
